@@ -7,6 +7,7 @@ import LoadingCogs from "../../atoms/LoadingCogs";
 // import XR200UpdateForm from "./XR200UpdateForm";
 // import constants from "../../../store/actionTypes";
 import MyBoardTable from "./MyBoardTable";
+import { Link } from "react-router-dom";
 // const { ASSETS } = constants;
 const today = new Date();
 class MyBoardContainer extends React.Component {
@@ -26,13 +27,13 @@ class MyBoardContainer extends React.Component {
     const data = [
       {
         key: "1",
-        first: "Today is",
+        first: "Сегодня",
         second:
           today.getDate() +
           "." +
           (today.getMonth() + 1) +
           "." +
-          today.getFullYear()
+          today.getFullYear(),
       },
       // {
       //   key: "2",
@@ -46,47 +47,51 @@ class MyBoardContainer extends React.Component {
       // },
       {
         key: "4",
-        first: "Update sensor data",
+        first: "Загрузить сертификат",
         second: (
           <Button
             onClick={() => {
               this.setState({ maximoAuthVisible: true });
             }}
           >
-            <Icon type="sync" /> Update
+            <Icon type="sync" /> Загрузить
           </Button>
-        )
+        ),
       },
       {
         key: "5",
-        first: "Update graphics",
+        first: "Перейти в профиль",
         second: (
           <Button
             onClick={() => {
               this.setState({ xr200visible: true });
             }}
           >
-            <Icon type="book" /> Upload graphana
+            <Link to="/user">
+              {" "}
+              <Icon type="book" />
+              Профиль
+            </Link>
           </Button>
-        )
-      }
+        ),
+      },
     ];
     return (
       <Card
         style={{ marginBottom: "35px" }}
         title={
           <Row className={`card-header-wrapper`} type="flex" align="middle">
-            <Col span={18}>My ICM-Board</Col>
+            <Col span={18}>Моя доска</Col>
             <Col span={6} className="align-right" />
           </Row>
         }
       >
         <Row>
           <Col span={6} className="pl-5">
-            <LetterAvatar name="Anton" size={50} radius={25} />
+            <LetterAvatar name="Дарья" size={50} radius={25} />
           </Col>
           <Col span={18} className="mt-12">
-            <span>Hello, Anton!</span>
+            <span>Здравствуйте, Дарья!</span>
           </Col>
         </Row>
         <MyBoardTable data={data} />

@@ -17,10 +17,10 @@ class MainContainerLayout extends React.Component {
   //   this.props.getSettings();
   // }
   state = {
-    collapsed: false
+    collapsed: false,
   };
 
-  onCollapse = collapsed => {
+  onCollapse = (collapsed) => {
     this.setState({ collapsed });
   };
   render() {
@@ -61,10 +61,10 @@ class MainContainerLayout extends React.Component {
             <Footer
               style={{
                 textAlign: "center",
-                height: 100
+                height: 100,
               }}
             >
-              ТИУ ©2019 СТРОИН
+              ТИУ ©2021 СТРОИН
             </Footer>
           </Layout>
         </Layout>

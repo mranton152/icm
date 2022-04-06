@@ -4,9 +4,9 @@ import { Popover, Row, Col } from "antd";
 import { Link } from "react-router-dom";
 class MainContainerMenuMobile extends React.Component {
   state = {
-    menuVisible: false
+    menuVisible: false,
   };
-  handleMenuVisibility = menuVisible => {
+  handleMenuVisibility = (menuVisible) => {
     this.setState({ menuVisible });
   };
   render() {
@@ -14,7 +14,7 @@ class MainContainerMenuMobile extends React.Component {
       <Row>
         <Col xs={12}>
           <Link to="/" style={{ display: "inline-block" }}>
-            <img src="/slb_logo.png" alt="Schlumberger logo" />
+            <img src="/logo.jpg" alt="logo" />
           </Link>
         </Col>
         <Col xs={12}>

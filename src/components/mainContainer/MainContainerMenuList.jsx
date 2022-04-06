@@ -8,11 +8,11 @@ const { SubMenu } = Menu;
 class MainContainerMenuList extends React.Component {
   state = {
     loading: false,
-    visible: false
+    visible: false,
   };
   showModal = () => {
     this.setState({
-      visible: true
+      visible: true,
     });
   };
   handleOk = () => {
@@ -42,37 +42,37 @@ class MainContainerMenuList extends React.Component {
         {!this.props.mobile && (
           <Menu.Item key="logo">
             <Link to="/">
-              <Icon type="android" />
+              <Icon type="laptop" />
             </Link>
           </Menu.Item>
         )}
         <Menu.Item key="main" className=" wf">
           <Link to="/">
-            <Icon type="robot" />
-            <span>ICM</span>
+            <Icon type="solution" />
+            <span>Smart Study</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="indicators">
-          <Link to="/indicators">
-            <Icon type="tablet" theme="outlined" />
-            <span>Показатели</span>{" "}
+
+        <Menu.Item key="courses">
+          <Link to="/courses">
+            <Icon type="file-protect" theme="outlined" />
+            <span>Курсы</span>{" "}
           </Link>
         </Menu.Item>
-        <Menu.Item key="senrors">
-          <Link to="/sensors">
-            <Icon type="tablet" theme="outlined" />
-            <span>Устройства</span>{" "}
+        <Menu.Item key="directions">
+          <Link to="/directions">
+            <Icon type="cluster" />
+            <span>Направления</span>{" "}
           </Link>
         </Menu.Item>
-        <Menu.Item key="statistic">
-          <Link to="/statistic">
-            <Icon type="line-chart" />
-            <span>Статистика</span>{" "}
+        <Menu.Item key="progress">
+          <Link to="/progress">
+            <Icon type="file-done" theme="outlined" /> <span>Оценки</span>{" "}
           </Link>
         </Menu.Item>
-        <Menu.Item key="reports">
-          <Link to="/reports">
-            <Icon type="file-text" theme="outlined" /> <span>Отчёты</span>{" "}
+        <Menu.Item key="companies">
+          <Link to="/companies">
+            <Icon type="apartment" theme="outlined" /> <span>Предприятия</span>{" "}
           </Link>
         </Menu.Item>
         <SubMenu
@@ -81,7 +81,7 @@ class MainContainerMenuList extends React.Component {
           title={
             <span>
               <Icon type="user" />
-              <span>Антон</span>
+              <span>Дарья</span>
               {/* <span>{meData && meData.firstName}</span> */}
             </span>
           }
@@ -89,7 +89,11 @@ class MainContainerMenuList extends React.Component {
           <Menu.Item key="settings" onClick={this.showModal}>
             Настройки
           </Menu.Item>
-          <Menu.Item key="reports">Отчёты</Menu.Item>
+          <Menu.Item key="user">
+            <Link to="/user">
+              <Icon type="user" theme="outlined" /> <span>Кабинет</span>{" "}
+            </Link>
+          </Menu.Item>
           <Menu.Divider />
           <Menu.Item key="exit" onClick={this.props.logOut}>
             <Icon type="logout" />

@@ -7,7 +7,7 @@ import store from "./store";
 
 import { Provider } from "react-redux";
 
-document.title = "ICM - Industrial Monitoring Center";
+document.title = "Smart study";
 ReactDOM.render(
   <Provider store={store}>
     <App />

@@ -3,10 +3,9 @@ import { Row, Col } from "antd";
 import MainPageList from "./MainPageList";
 import MyBoardContainer from "./myBoard/MyBoardContainer";
 // import HelpChatContainer from "./helpChat/HelpChatContainer";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 // import constants from "../../store/actionTypes";
 
-// const { ASSETS } ы= constants;
 class MainPageContainer extends React.Component {
   // componentDidMount() {
   //   this.props.getDate();
@@ -14,56 +13,55 @@ class MainPageContainer extends React.Component {
   // }
   render() {
     const AreasData = {
-      total: 3,
+      total: 4,
       list: [
         {
-          title: "Показатели",
-          description: "Отображение данных в реальном времени",
-          syncData: [{ title: "Indicators", date: "05.09.19" }],
-          img: "/img/indicator.jpg",
-          link: "/reports"
-        },
-        {
-          title: "Устройства",
+          title: "Курсы",
           description:
-            "Все устройства, измеряющие основные показатели на производстве, и данные с них в режиме реального времени",
-          syncData: [
-            { title: "Temperature", date: "11.09.19" },
-            { title: "Wet", date: "11.09.19" },
-            {
-              title: "Pressure",
-              date: "10.09.19"
-            }
-          ],
-          img: "/img/sensor.jpg",
-          link: "/sensors"
+            "Все обучающие курсы, которые помогут освоить основные стандарты IT-направлений",
+          // syncData: [
+          //   { title: "Temperature", date: "11.09.19" },
+          //   { title: "Wet", date: "11.09.19" },
+          //   {
+          //     title: "Pressure",
+          //     date: "10.09.19",
+          //   },
+          // ],
+          img: "/img/courses.jpg",
+          link: "/courses",
         },
         {
-          title: "Статистика",
+          title: "Направления",
           description:
-            "Собранные данные с датчиков, представленные в виде графиков",
-          syncData: [{ title: "Grafana", date: "09.09.19" }],
-          img: "/img/stat.jpg",
-          link: "/statistic"
+            "Структура направлений, стандартов, дисциплин и курсов в системе обучения",
+          // syncData: [{ title: "Data base", date: "05.09.19" }],
+          img: "/img/directions.jpg",
+          link: "/directions",
         },
         {
-          title: "Отчёты",
-          description: "Выгрузка данных в удобном формате",
-          syncData: [{ title: "Data base", date: "05.09.19" }],
-          img: "/img/reports.jpg",
-          link: "/reports"
-        }
-      ]
+          title: "Оценки",
+          description: "Прогресс обучающегося",
+          // syncData: [{ title: "Grafana", date: "09.09.19" }],
+          img: "/img/progress.jpg",
+          link: "/progress",
+        },
+
+        {
+          title: "Предприятия",
+          description: "Рейтинг работодателей, предложения о работе",
+          // syncData: [{ title: "Data base", date: "05.09.19" }],
+          img: "/img/companies.jpg",
+          link: "/companies",
+        },
+      ],
     };
     return (
       <Row>
-        <Col
-        //  md={16}
-        >
+        <Col span={16}>
           <MainPageList AreasData={AreasData} />
         </Col>
         <Col md={{ span: 7, offset: 1 }}>
-          {/* <MyBoardContainer /> */}
+          <MyBoardContainer />
           {/* <HelpChatContainer /> */}
         </Col>
       </Row>
