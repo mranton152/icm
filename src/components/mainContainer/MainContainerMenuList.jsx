@@ -81,7 +81,7 @@ class MainContainerMenuList extends React.Component {
           title={
             <span>
               <Icon type="user" />
-              <span>Дарья</span>
+              <span>Антон</span>
               {/* <span>{meData && meData.firstName}</span> */}
             </span>
           }

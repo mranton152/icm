@@ -6,6 +6,8 @@ import ProgressContainer from "./progress/ProgressContainer";
 import DirectionContainer from "./directions/DirectionContainer";
 import CompanyContainer from "./companies/CompanyContainer";
 import UserContainer from "./user/UserContainer";
+import TestingContainer from "./testing/TestingContainer";
+import ResultsContainer from "./results/ResultsContainer";
 class AreasRouter extends React.Component {
   render() {
     return (
@@ -21,6 +23,8 @@ class AreasRouter extends React.Component {
         />
         <Route key="4" exact path="/companies" component={CompanyContainer} />
         <Route key="5" exact path="/user" component={UserContainer} />
+        <Route key="6" exact path="/testing" component={TestingContainer} />
+        <Route key="7" exact path="/results" component={ResultsContainer} />
       </Switch>
     );
   }

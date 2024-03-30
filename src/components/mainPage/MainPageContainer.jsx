@@ -16,17 +16,46 @@ class MainPageContainer extends React.Component {
       total: 4,
       list: [
         {
+          title: "Тестирование",
+          description:
+            "Пройдите тестирование для оценки ваших навыков",
+          syncData: [
+            { title: "Тестирование", date: "21.03.24" },
+            // { title: "Wet", date: "11.09.19" },
+            // {
+            //   title: "Pressure",
+            //   date: "10.09.19",
+            // },
+          ],
+          img: "/img/testing.jpg",
+          link: "/testing",
+        },        {
+          title: "Результаты тестирования",
+          description:
+            "Просмотрите результаты вашего тестирования",
+          syncData: [
+            { title: "Тестирование", date: "21.03.24" },
+            // { title: "Wet", date: "11.09.19" },
+            // {
+            //   title: "Pressure",
+            //   date: "10.09.19",
+            // },
+          ],
+          img: "/img/results.jpg",
+          link: "/results",
+        },
+        {
           title: "Курсы",
           description:
             "Все обучающие курсы, которые помогут освоить основные стандарты IT-направлений",
-          // syncData: [
-          //   { title: "Temperature", date: "11.09.19" },
-          //   { title: "Wet", date: "11.09.19" },
-          //   {
-          //     title: "Pressure",
-          //     date: "10.09.19",
-          //   },
-          // ],
+          syncData: [
+            { title: "Temperature", date: "11.09.19" },
+            // { title: "Wet", date: "11.09.19" },
+            // {
+            //   title: "Pressure",
+            //   date: "10.09.19",
+            // },
+          ],
           img: "/img/courses.jpg",
           link: "/courses",
         },
@@ -34,14 +63,14 @@ class MainPageContainer extends React.Component {
           title: "Направления",
           description:
             "Структура направлений, стандартов, дисциплин и курсов в системе обучения",
-          // syncData: [{ title: "Data base", date: "05.09.19" }],
+          syncData: [{ title: "Data base", date: "05.09.19" }],
           img: "/img/directions.jpg",
           link: "/directions",
         },
         {
           title: "Оценки",
           description: "Прогресс обучающегося",
-          // syncData: [{ title: "Grafana", date: "09.09.19" }],
+          syncData: [{ title: "Grafana", date: "09.09.19" }],
           img: "/img/progress.jpg",
           link: "/progress",
         },
@@ -49,7 +78,7 @@ class MainPageContainer extends React.Component {
         {
           title: "Предприятия",
           description: "Рейтинг работодателей, предложения о работе",
-          // syncData: [{ title: "Data base", date: "05.09.19" }],
+          syncData: [{ title: "Data base", date: "05.09.19" }],
           img: "/img/companies.jpg",
           link: "/companies",
         },

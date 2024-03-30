@@ -12,17 +12,17 @@ class MainPageItem extends React.Component {
           className="pa-20 white-background"
           style={{ padding: "20px" }}
           key={item.title}
-          // actions={["Last updated: "].concat(
-          //   item.syncData.map(el => (
-          //     <IconText
-          //       type="sync"
-          //       // text={`${el.title} : ${dayjs(el.date).format(
-          //       //   "DD/MM/YYYY HH:mm"
-          //       // )}`}
-          //       text={`${el.title} : ${el.date}`}
-          //     />
-          //   ))
-          // )}
+          actions={["Последнее обновление: "].concat(
+            item.syncData.map(el => (
+              <IconText
+                type="sync"
+                // text={`${el.title} : ${dayjs(el.date).format(
+                //   "DD/MM/YYYY HH:mm"
+                // )}`}
+                text={`${el.title} : ${el.date}`}
+              />
+            ))
+          )}
           extra={<img width={272} alt="logo" src={item.img} />}
         >
           <List.Item.Meta

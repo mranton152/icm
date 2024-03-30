@@ -15,7 +15,7 @@
     "redux-saga": "^1.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

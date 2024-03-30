@@ -88,10 +88,10 @@ class MyBoardContainer extends React.Component {
       >
         <Row>
           <Col span={6} className="pl-5">
-            <LetterAvatar name="Дарья" size={50} radius={25} />
+            <LetterAvatar name="Антон" size={50} radius={25} />
           </Col>
           <Col span={18} className="mt-12">
-            <span>Здравствуйте, Дарья!</span>
+            <span>Здравствуйте, Антон!</span>
           </Col>
         </Row>
         <MyBoardTable data={data} />

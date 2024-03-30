@@ -64,7 +64,7 @@ class MainContainerLayout extends React.Component {
                 height: 100,
               }}
             >
-              ТИУ ©2021 СТРОИН
+              ТИУ ©2024 ВШЦТ
             </Footer>
           </Layout>
         </Layout>
