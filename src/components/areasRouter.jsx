@@ -6,8 +6,11 @@ import ProgressContainer from "./progress/ProgressContainer";
 import DirectionContainer from "./directions/DirectionContainer";
 import CompanyContainer from "./companies/CompanyContainer";
 import UserContainer from "./user/UserContainer";
-import TestingContainer from "./testing/TestingContainer";
+import TestContainer from "./test/TestContainer";
+import ProfileContainer from "./profile/ProfileContainer";
 import ResultsContainer from "./results/ResultsContainer";
+import ProfTypeContainer from "./proftype/ProfTypeContainer";
+import TypeMContainer from "./typem/TypeMContainer";
 class AreasRouter extends React.Component {
   render() {
     return (
@@ -23,8 +26,11 @@ class AreasRouter extends React.Component {
         />
         <Route key="4" exact path="/companies" component={CompanyContainer} />
         <Route key="5" exact path="/user" component={UserContainer} />
-        <Route key="6" exact path="/testing" component={TestingContainer} />
-        <Route key="7" exact path="/results" component={ResultsContainer} />
+        <Route key="6" exact path="/test" component={TestContainer} />
+        <Route key="7" exact path="/profile" component={ProfileContainer} />
+        <Route key="8" exact path="/proftype" component={ProfTypeContainer} />
+        <Route key="9" exact path="/typem" component={TypeMContainer} />
+        <Route key="10" exact path="/results" component={ResultsContainer} />
       </Switch>
     );
   }

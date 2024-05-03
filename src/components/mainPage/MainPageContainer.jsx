@@ -28,7 +28,7 @@ class MainPageContainer extends React.Component {
             // },
           ],
           img: "/img/testing.jpg",
-          link: "/testing",
+          link: "/test",
         },        {
           title: "Результаты тестирования",
           description:
